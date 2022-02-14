@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'PT Sans', sans-serif ;
+  line-height: 1.7;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 18px 10px 0;
+  margin-bottom: 20px;
+  border-bottom: #666 solid 1px;
+}
+
+
+/* utilities */
+.cs-main-title {
+  font-size: 60px;
+  margin: 30px;
+}
+
+.h2-light {
+  font-size: 35px;
+}
+
+.h2-dark {
+  font-size: 35px;
+  color: #333;
+  margin: 60px 70px 30px;
+  text-align: center;
+}
+
+.p-light {
+  font-weight: bold;
+  padding: 25px 70px 200px;
+  max-width: 1200px;
+  font-size: 20px;
+}
+
+.p-light-padding {
+  font-weight: bold;
+  padding: 25px 70px 40px;
+  max-width: 1200px;
+  font-size: 20px;
+}
+
+.p-big {
+  font-weight: bold;
+  padding: 25px 70px 20px;
+  max-width: 1200px; 
+  font-size: 20px;
+}
+
+.p-dark {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.p-small {
+  font-size: 15px;
+  color: #333;
+}
+
+.trial-header {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.h2-light {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.h2-light.bigger {
+  font-size: 37px;
+}
+
+.h2-light.smaller {
+  color:#333;
+  font-weight: lighter;
+}
+
+.btn-big {
+  background: #b90415;
+  padding: 14px 22px;
+  margin-bottom: 30px;
+}
+
+.btn-big:hover {
+  opacity: 0.9;
+}
+
+.btn-dark {
+  background: #143f85;
+  padding: 14px 22px;
+}
+
+.btn-dark:hover {
+  opacity:0.9;
+}
+
+.ul-dark {
+  font-size: 14px;
+  color:#999;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin:auto;
+  background: #333;
+  height: 40px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul a {
+  padding: 0 20px;
+  margin: 0 5px;
+}
+
+#header {
+  background: url('./images/mytunes_guitar.jpg') no-repeat center center/cover;
+  position: relative;
+  max-width: 100%;
+  height: 950px;
+}
+
+#header::before {
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+
+#header * {
+  z-index: 10;
+}
+
+/* showcase */
+.showcase {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* music section */
+.trial {
+  background: #252529;
+  width: 100%;
+  padding: 25px 70px 40px;
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} 
+
+.trial img {
+  width: 95%;
+  max-width: 1100px;
+}
+
+/* video section */
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.music img {
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* gift cards  */
+.gift-cards {
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  background: url('./images/section_nightsky.jpeg') no-repeat bottom center/cover;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 160px 20px 80px;
+}
+
+.gc-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  height: 35%;
+}
+
+.image-side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.image-side img {
+  max-width: 65%;
+  width: 100%;
+  max-height: 85%;
+  object-fit: contain;
+
+}
+
+.text-side {
+  width: 100%;
+  max-width: 45%;
+  text-align: left;
+  padding: 0 55px 0 0;
+}
+
+.redeem-link {
+  color:#333;
+  display: block;
+  border-top: #666 solid 1px;
+  padding-top: 10px;
+}
+
+/* Overview */
+.overview {
+  background: #252529;
+  padding: 30px 50px;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-row .box {
+  margin-right: 30px;
+  padding-top: 40px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  height: 55px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
